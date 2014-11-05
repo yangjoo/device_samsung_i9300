@@ -1,5 +1,7 @@
 system/bin/gpsd
 system/lib/hw/gps.exynos4.so
+system/lib/libfactoryutil.so
+system/lib/libomission_avoidance.so
 system/lib/libsec-ril.so
 system/usr/idc/sec_touchscreen.idc
 system/usr/keylayout/sec_touchkey.kl
