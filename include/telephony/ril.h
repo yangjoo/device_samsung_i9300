@@ -183,6 +183,7 @@ typedef struct {
     char            isMT;       /* nonzero if call is mobile terminated */
     char            als;        /* ALS line indicator if available
                                    (0 = line 1) */
+    char            isVideo;
     char            isVoice;    /* nonzero if this is is a voice call */
     char            isVoicePrivacy;     /* nonzero if CDMA voice privacy mode is active */
     char *          number;     /* Remote party number */
