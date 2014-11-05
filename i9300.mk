@@ -31,7 +31,8 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Init files
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.smdk4x12:root/fstab.smdk4x12 \
+    $(LOCAL_PATH)/rootdir/fstab.SHV-E210K:root/fstab.SHV-E210K \
+    $(LOCAL_PATH)/rootdir/fstab.SHV-E210S:root/fstab.SHV-E210S \
     $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc
 
 # Audio
@@ -88,7 +89,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SamsungExynos4RIL \
     mobiledata.interfaces=pdp0,wlan0,gprs,ppp0 \
     ro.telephony.call_ring.multiple=false \
-    ro.telephony.call_ring.delay=3000
+    ro.telephony.call_ring.delay=1000 \
+    telephony.lteOnGsmDevice=1
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
